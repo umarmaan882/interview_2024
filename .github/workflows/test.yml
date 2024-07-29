@@ -1,1 +1,21 @@
-name: test workflow 
+name: test workflow
+on: push
+
+jobs:
+    test job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: welcome job
+          run: echo "my welcome job"
+
+        - name: entry job
+          run: ls -la
+
+    deploy_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: 2nd welcome job
+          run: echo "my welcome 2nd job"
+
+        - name: entry 2nd job
+          run: ls -la
