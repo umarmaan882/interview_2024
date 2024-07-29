@@ -2,7 +2,7 @@ name: test workflow
 on: push
 
 jobs:
-    test job:
+    test_job:
         runs-on: ubuntu-latest
         steps:
         - name: welcome job
