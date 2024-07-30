@@ -5,6 +5,9 @@ jobs:
     test_job:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
+
         - name: welcome job
           run: echo "my welcome job"
 
@@ -14,6 +17,9 @@ jobs:
     deploy_job:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
+
         - name: 2nd welcome job
           run: echo "my welcome 2nd job"
 
